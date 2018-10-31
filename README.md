@@ -24,7 +24,9 @@ import Payjp from 'react-native-payjp';
 
 class App extends Component {
     render() {
-        Pay.jp.setPublicKey("pk_test_c62fade9d045b54cd76d7036");
+        //パブリックキーをセット
+        Payjp.setPublicKey("pk_test_c62fade9d045b54cd76d7036");
+        //トークンを作成
         Payjp.createToken(
             "4242424242424242", //カード番号
             "123",              //CVC
@@ -32,7 +34,7 @@ class App extends Component {
             "2020",             //年
             "TARO YAMADA")      //名前
             .then(res) {
-                console.log("token:", res);
+                console.log("token:", res); //resに"error"かトークンの文字列が返ります。
             }
             ...
         }
