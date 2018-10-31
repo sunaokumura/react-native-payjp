@@ -11,6 +11,12 @@
 npm install --save react-native-payjp
 ```
 
+パッケージをインストール後、次のコマンドを実行してください。
+
+```
+react-native link react-native-payjp
+```
+
 ## 使用方法
 
 ```
