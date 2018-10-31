@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
 
 import jp.pay.android.PayjpToken;
 import jp.pay.android.PayjpTokenConfiguration;
@@ -30,19 +30,25 @@ public class PayjpModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void createToken(String number, String cvc, String expMonth, String expYear, String name, final Callback callback) {
+    public void createToken(
+            String number,
+            String cvc,
+            String expMonth,
+            String expYear,
+            String name,
+            final Promise promise) {
         PayjpToken payjpToken = new PayjpToken(new PayjpTokenConfiguration.Builder(this.publicKey)
                 .build());
         Task<Token> createToken = payjpToken.createToken(number, cvc, expMonth, expYear, name);
             createToken.enqueue(new Task.Callback<Token>() {
                 @Override
                 public void onSuccess(Token data) {
-                    callback.invoke(data.getId());
+                    promise.resolve(data.getId());
                 }
 
                 @Override
                 public void onError(@NonNull Throwable throwable) {
-                    callback.invoke(ERROR);
+                    promise.resolve(ERROR);
                 }
             });
     }

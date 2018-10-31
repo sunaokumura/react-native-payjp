@@ -1,10 +1,14 @@
 {
   "name": "react-native-payjp",
-  "version": "1.0.0",
-  "description": "payjp for react native",
+  "version": "0.1.0",
+  "description": "payjp sdk wrapper for react native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunaokumura/react-native-payjp.git"
   },
   "deprecated": false,
   "keywords": [
