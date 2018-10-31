@@ -53,4 +53,4 @@ MIT
 
 ## 作者
 
-Sunao Kumura (sunao.kumura@gmail.com)
+Sunao Kumura
