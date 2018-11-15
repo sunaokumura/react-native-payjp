@@ -1,13 +1,15 @@
 import React from 'react';
 import { NativeModules, Platform } from 'react-native';
 const invariant = require('invariant');
+const RNPayjpIOS = NativeModules.RNPayjpIOS;
 const RNPayjpAndroid = NativeModules.RNPayjpAndroid;
 
 let Payjp;
 
 if (Platform.OS === 'ios') {
-    invariant(Payjp,
-        'react-native-payjp: Invalid platform.');
+    invariant(RNPayjpIOS,
+        'react-native-payjp: Import libraries to iOS "react-native link react-native-payjp');
+    Payjp = RNPayjpIOS;
 } else if (Platform.OS === 'android') {
     invariant(RNPayjpAndroid,
         'react-native-payjp: Import libraries to android "react-native link react-native-payjp"');
