@@ -22,7 +22,7 @@ react-native link react-native-payjp
 brew install carthage
 ```
 
-その後、ReactNativeプロジェクトフォルダー配下のnode_modules/react-native-payjp/ios/RNPayjpIOSまで移動して次のコマンドを実行してください。
+その後、ReactNativeプロジェクトフォルダー配下のnode_modules/react-native-payjp/ios/まで移動して次のコマンドを実行してください。
 [PAY.JP iOS SDK Beta](https://github.com/payjp/payjp-ios)がダウンロードされビルドされます。
 
 ```
