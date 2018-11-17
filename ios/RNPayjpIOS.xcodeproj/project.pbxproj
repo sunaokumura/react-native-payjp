@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44438A19219FFBEF0005C4A4 /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44438A18219FFBEF0005C4A4 /* PAYJP.framework */; };
 		448901B7219D4051003CAA51 /* RNPayjpIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 448901B6219D4051003CAA51 /* RNPayjpIOS.m */; };
 		448901B8219D4051003CAA51 /* RNPayjpIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 448901B5219D4051003CAA51 /* RNPayjpIOS.h */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		44438A18219FFBEF0005C4A4 /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
 		448901B2219D4051003CAA51 /* libRNPayjpIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPayjpIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		448901B5219D4051003CAA51 /* RNPayjpIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPayjpIOS.h; sourceTree = "<group>"; };
 		448901B6219D4051003CAA51 /* RNPayjpIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPayjpIOS.m; sourceTree = "<group>"; };
@@ -35,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44438A19219FFBEF0005C4A4 /* PAYJP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44438A17219FFBD80005C4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44438A18219FFBEF0005C4A4 /* PAYJP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		448901A9219D4050003CAA51 = {
 			isa = PBXGroup;
 			children = (
 				448901B4219D4051003CAA51 /* RNPayjpIOS */,
 				448901B3219D4051003CAA51 /* Products */,
+				44438A17219FFBD80005C4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -278,6 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
