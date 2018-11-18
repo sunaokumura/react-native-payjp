@@ -4,8 +4,10 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
-#import PAYJP;
+@import PAYJP;
 
 @interface RNPayjpIOS : NSObject <RCTBridgeModule>
+
+@property (nonatomic, strong) PAYAPIClient *payjpClient;
 
 @end

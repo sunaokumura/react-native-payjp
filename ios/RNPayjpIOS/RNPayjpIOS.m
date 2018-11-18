@@ -9,7 +9,6 @@
 @implementation RNPayjpIOS
 
 NSString *publicKey;
-PAYAPIClient *payjpClient;
 
 - (instancetype)init
 {
@@ -22,7 +21,7 @@ PAYAPIClient *payjpClient;
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(setPublicKey:(NSString *)publicKey){
-    self.mPublicKey = publicKey;
+    self.publicKey = publicKey;
 }
 
 RCT_EXPORT_METHOD(createToken:(NSString *)number
@@ -31,7 +30,7 @@ RCT_EXPORT_METHOD(createToken:(NSString *)number
                   expYear:(NSString *)expYear
                   name:(NSString *)name
                   resolver:(RCTPromiseResolveBlock)resolve){
-    self.payjpClient = [[PAYAPIClient alloc] initWithPublicKey:self.publicKey];
+    self.payjpClient = [[PAYAPIClient alloc] initWithPublicKey:publicKey];
     self.payjpClient.locale = [NSLocale currentLocale];
     [self.payjpClient createTokenWith:number
                                   cvc:cvc

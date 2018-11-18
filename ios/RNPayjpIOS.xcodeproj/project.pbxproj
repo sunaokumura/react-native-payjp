@@ -7,10 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44438A19219FFBEF0005C4A4 /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44438A18219FFBEF0005C4A4 /* PAYJP.framework */; };
+		443BB8DF21A0713800473268 /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443BB8DC21A06E3500473268 /* PAYJP.framework */; };
 		448901B7219D4051003CAA51 /* RNPayjpIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 448901B6219D4051003CAA51 /* RNPayjpIOS.m */; };
 		448901B8219D4051003CAA51 /* RNPayjpIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 448901B5219D4051003CAA51 /* RNPayjpIOS.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		443BB8DB21A06E3500473268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 615AFF5B1C8C74A1003FB86F;
+			remoteInfo = PAYJP;
+		};
+		443BB8DD21A06E3500473268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 615AFF651C8C74A1003FB86F;
+			remoteInfo = PAYJPTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		448901B0219D4050003CAA51 /* CopyFiles */ = {
@@ -26,7 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		44438A18219FFBEF0005C4A4 /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
+		443BB8D621A06E3200473268 /* PAYJP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PAYJP.xcodeproj; path = "Carthage/Checkouts/payjp-ios/PAYJP.xcodeproj"; sourceTree = "<group>"; };
 		448901B2219D4051003CAA51 /* libRNPayjpIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPayjpIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		448901B5219D4051003CAA51 /* RNPayjpIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPayjpIOS.h; sourceTree = "<group>"; };
 		448901B6219D4051003CAA51 /* RNPayjpIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPayjpIOS.m; sourceTree = "<group>"; };
@@ -37,17 +54,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44438A19219FFBEF0005C4A4 /* PAYJP.framework in Frameworks */,
+				443BB8DF21A0713800473268 /* PAYJP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443BB8D721A06E3200473268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443BB8DC21A06E3500473268 /* PAYJP.framework */,
+				443BB8DE21A06E3500473268 /* PAYJPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		44438A17219FFBD80005C4A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44438A18219FFBEF0005C4A4 /* PAYJP.framework */,
+				443BB8D621A06E3200473268 /* PAYJP.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,7 +114,6 @@
 				448901AE219D4050003CAA51 /* Sources */,
 				448901AF219D4050003CAA51 /* Frameworks */,
 				448901B0219D4050003CAA51 /* CopyFiles */,
-				4489034B219D74BC003CAA51 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,6 +148,12 @@
 			mainGroup = 448901A9219D4050003CAA51;
 			productRefGroup = 448901B3219D4051003CAA51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 443BB8D721A06E3200473268 /* Products */;
+					ProjectRef = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				448901B1219D4050003CAA51 /* RNPayjpIOS */,
@@ -130,26 +161,22 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4489034B219D74BC003CAA51 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/PAYJP.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+/* Begin PBXReferenceProxy section */
+		443BB8DC21A06E3500473268 /* PAYJP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PAYJP.framework;
+			remoteRef = 443BB8DB21A06E3500473268 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-/* End PBXShellScriptBuildPhase section */
+		443BB8DE21A06E3500473268 /* PAYJPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PAYJPTests.xctest;
+			remoteRef = 443BB8DD21A06E3500473268 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		448901AE219D4050003CAA51 /* Sources */ = {
@@ -214,10 +241,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -267,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +310,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -23,10 +23,10 @@ brew install carthage
 ```
 
 その後、ReactNativeプロジェクトフォルダー配下のnode_modules/react-native-payjp/ios/まで移動して次のコマンドを実行してください。
-[PAY.JP iOS SDK Beta](https://github.com/payjp/payjp-ios)がダウンロードされビルドされます。
+[PAY.JP iOS SDK Beta](https://github.com/payjp/payjp-ios)が`チェックアウトされます。
 
 ```
-carthage update
+carthage update --no-build
 ```
 
 以上でインストールの完了です。
