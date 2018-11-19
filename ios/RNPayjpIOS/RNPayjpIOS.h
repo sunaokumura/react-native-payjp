@@ -7,6 +7,10 @@
 @import PAYJP;
 
 @interface RNPayjpIOS : NSObject <RCTBridgeModule>
+{
+    @private
+    NSString *mPublicKey;
+}
 
 @property (nonatomic, strong) PAYAPIClient *payjpClient;
 

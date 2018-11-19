@@ -7,29 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		443BB8DF21A0713800473268 /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443BB8DC21A06E3500473268 /* PAYJP.framework */; };
 		448901B7219D4051003CAA51 /* RNPayjpIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 448901B6219D4051003CAA51 /* RNPayjpIOS.m */; };
 		448901B8219D4051003CAA51 /* RNPayjpIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 448901B5219D4051003CAA51 /* RNPayjpIOS.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		443BB8DB21A06E3500473268 /* PBXContainerItemProxy */ = {
+		444BD21321A2A97E0012ABD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 615AFF5B1C8C74A1003FB86F;
 			remoteInfo = PAYJP;
 		};
-		443BB8DD21A06E3500473268 /* PBXContainerItemProxy */ = {
+		444BD21521A2A97E0012ABD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 615AFF651C8C74A1003FB86F;
 			remoteInfo = PAYJPTests;
 		};
+		444BD21721A2A9840012ABD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 615AFF5A1C8C74A1003FB86F;
+			remoteInfo = PAYJP;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		448733EC21A24BE300CFDFAA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		448901B0219D4050003CAA51 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,7 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		443BB8D621A06E3200473268 /* PAYJP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PAYJP.xcodeproj; path = "Carthage/Checkouts/payjp-ios/PAYJP.xcodeproj"; sourceTree = "<group>"; };
+		444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PAYJP.xcodeproj; path = "Carthage/Checkouts/payjp-ios/PAYJP.xcodeproj"; sourceTree = "<group>"; };
 		448901B2219D4051003CAA51 /* libRNPayjpIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPayjpIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		448901B5219D4051003CAA51 /* RNPayjpIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPayjpIOS.h; sourceTree = "<group>"; };
 		448901B6219D4051003CAA51 /* RNPayjpIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPayjpIOS.m; sourceTree = "<group>"; };
@@ -54,36 +69,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443BB8DF21A0713800473268 /* PAYJP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		443BB8D721A06E3200473268 /* Products */ = {
+		444BD20D21A2A95E0012ABD7 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
-				443BB8DC21A06E3500473268 /* PAYJP.framework */,
-				443BB8DE21A06E3500473268 /* PAYJPTests.xctest */,
+				444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */,
 			);
-			name = Products;
+			name = libraries;
 			sourceTree = "<group>";
 		};
-		44438A17219FFBD80005C4A4 /* Frameworks */ = {
+		444BD20F21A2A97E0012ABD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				443BB8D621A06E3200473268 /* PAYJP.xcodeproj */,
+				444BD21421A2A97E0012ABD7 /* PAYJP.framework */,
+				444BD21621A2A97E0012ABD7 /* PAYJPTests.xctest */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		448901A9219D4050003CAA51 = {
 			isa = PBXGroup;
 			children = (
+				444BD20D21A2A95E0012ABD7 /* libraries */,
 				448901B4219D4051003CAA51 /* RNPayjpIOS */,
 				448901B3219D4051003CAA51 /* Products */,
-				44438A17219FFBD80005C4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +128,12 @@
 				448901AE219D4050003CAA51 /* Sources */,
 				448901AF219D4050003CAA51 /* Frameworks */,
 				448901B0219D4050003CAA51 /* CopyFiles */,
+				448733EC21A24BE300CFDFAA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				444BD21821A2A9840012ABD7 /* PBXTargetDependency */,
 			);
 			name = RNPayjpIOS;
 			productName = PNPayjpIOS;
@@ -150,8 +166,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 443BB8D721A06E3200473268 /* Products */;
-					ProjectRef = 443BB8D621A06E3200473268 /* PAYJP.xcodeproj */;
+					ProductGroup = 444BD20F21A2A97E0012ABD7 /* Products */;
+					ProjectRef = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -162,18 +178,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		443BB8DC21A06E3500473268 /* PAYJP.framework */ = {
+		444BD21421A2A97E0012ABD7 /* PAYJP.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PAYJP.framework;
-			remoteRef = 443BB8DB21A06E3500473268 /* PBXContainerItemProxy */;
+			remoteRef = 444BD21321A2A97E0012ABD7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		443BB8DE21A06E3500473268 /* PAYJPTests.xctest */ = {
+		444BD21621A2A97E0012ABD7 /* PAYJPTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = PAYJPTests.xctest;
-			remoteRef = 443BB8DD21A06E3500473268 /* PBXContainerItemProxy */;
+			remoteRef = 444BD21521A2A97E0012ABD7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -188,6 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		444BD21821A2A9840012ABD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PAYJP;
+			targetProxy = 444BD21721A2A9840012ABD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		448901B9219D4051003CAA51 /* Debug */ = {
@@ -305,6 +329,7 @@
 		448901BC219D4051003CAA51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,6 +346,7 @@
 		448901BD219D4051003CAA51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -3,6 +3,7 @@
 # react-native-payjp
 
 [PAY.JP](https://pay.jp/) の [cardtoken](https://pay.jp/docs/cardtoken) を React Native アプリで使うためのコンポーネントです。
+(* 現在Androidのみ対応)
 
 ## インストール方法
 
@@ -14,19 +15,6 @@ npm install --save react-native-payjp
 
 ```
 react-native link react-native-payjp
-```
-
-続いて、iOSの場合は[Homebrew](https://brew.sh/index_ja)を使って、次のコマンドを実行し[Carthage](https://github.com/Carthage/Carthage)をインストールしてください。
-
-```
-brew install carthage
-```
-
-その後、ReactNativeプロジェクトフォルダー配下のnode_modules/react-native-payjp/ios/まで移動して次のコマンドを実行してください。
-[PAY.JP iOS SDK Beta](https://github.com/payjp/payjp-ios)が`チェックアウトされます。
-
-```
-carthage update --no-build
 ```
 
 以上でインストールの完了です。
