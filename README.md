@@ -3,7 +3,6 @@
 # react-native-payjp
 
 [PAY.JP](https://pay.jp/) の [cardtoken](https://pay.jp/docs/cardtoken) を React Native アプリで使うためのコンポーネントです。
-(* 現在Androidのみ対応)
 
 ## インストール方法
 
@@ -17,9 +16,15 @@ npm install --save react-native-payjp
 react-native link react-native-payjp
 ```
 
-以上でインストールの完了です。
+以上でAndroid向けのインストールは完了です。
 
-## 使用方法
+iOSの場合は、続いてXcodeでReactNativeのプロジェクトファイルを開いて
+プロジェクトに空のswiftファイルとbridging-headerを追加してください。
+これはSwiftで書かれているPAYJPのライブラリを実行するために
+Swift標準ライブラリをアプリに組み込むためです。
+
+
+## 使用例
 
 ```
 import Payjp from 'react-native-payjp';
@@ -35,11 +40,10 @@ class App extends Component {
             "12",               //月
             "2020",             //年
             "TARO YAMADA")      //名前
-            .then(res) {
+            .then((res)=>{
                 console.log("token:", res); //resに"error"かトークンの文字列が返ります。
-            }
+            });
             ...
-        }
         return (
             ...
         )
@@ -51,4 +55,4 @@ MIT
 
 ## 作者
 
-Sunao K
+Sunao
