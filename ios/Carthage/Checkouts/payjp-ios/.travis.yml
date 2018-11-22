@@ -1,0 +1,14 @@
+language: objective-c
+matrix:
+  include:
+    - osx_image: xcode10
+
+before_install:
+  - carthage bootstrap --no-use-binaries --platform ios
+
+script:
+    - xcodebuild -scheme PAYJP -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.0,name=iPhone XS Max' -configuration Debug test | xcpretty -c
+
+cache:
+  directories:
+    - Carthage

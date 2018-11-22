@@ -9,34 +9,34 @@
 /* Begin PBXBuildFile section */
 		448901B7219D4051003CAA51 /* RNPayjpIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 448901B6219D4051003CAA51 /* RNPayjpIOS.m */; };
 		448901B8219D4051003CAA51 /* RNPayjpIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 448901B5219D4051003CAA51 /* RNPayjpIOS.h */; };
+		44A2421721A6C53200A96B21 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2420D21A6C53100A96B21 /* Object.swift */; };
+		44A2421821A6C53200A96B21 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2420F21A6C53100A96B21 /* Card.swift */; };
+		44A2421921A6C53200A96B21 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2421021A6C53100A96B21 /* APIError.swift */; };
+		44A2421B21A6C53200A96B21 /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2421221A6C53100A96B21 /* Transformers.swift */; };
+		44A2421C21A6C53200A96B21 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2421321A6C53100A96B21 /* APIClient.swift */; };
+		44A2421D21A6C53200A96B21 /* PAYErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2421521A6C53100A96B21 /* PAYErrorResponse.swift */; };
+		44A2421E21A6C53200A96B21 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2421621A6C53200A96B21 /* Token.swift */; };
+		44A2422621A6C5A200A96B21 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422021A6C5A100A96B21 /* AnyError.swift */; };
+		44A2422721A6C5A200A96B21 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422221A6C5A200A96B21 /* ResultProtocol.swift */; };
+		44A2422821A6C5A200A96B21 /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422321A6C5A200A96B21 /* NoError.swift */; };
+		44A2422921A6C5A200A96B21 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422421A6C5A200A96B21 /* Result.swift */; };
+		44A2423821A6C5E400A96B21 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422B21A6C5E300A96B21 /* RawRepresentable.swift */; };
+		44A2423921A6C5E400A96B21 /* Casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422C21A6C5E300A96B21 /* Casting.swift */; };
+		44A2423A21A6C5E400A96B21 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422D21A6C5E300A96B21 /* NSNumber.swift */; };
+		44A2423B21A6C5E400A96B21 /* Extractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2422E21A6C5E300A96B21 /* Extractor.swift */; };
+		44A2423C21A6C5E400A96B21 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423021A6C5E300A96B21 /* Decodable.swift */; };
+		44A2423D21A6C5E400A96B21 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423121A6C5E400A96B21 /* Transformer.swift */; };
+		44A2423E21A6C5E400A96B21 /* StandardLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423221A6C5E400A96B21 /* StandardLib.swift */; };
+		44A2423F21A6C5E400A96B21 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423321A6C5E400A96B21 /* Operators.swift */; };
+		44A2424021A6C5E400A96B21 /* decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423421A6C5E400A96B21 /* decode.swift */; };
+		44A2424121A6C5E400A96B21 /* DecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423521A6C5E400A96B21 /* DecodeError.swift */; };
+		44A2424221A6C5E400A96B21 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2423621A6C5E400A96B21 /* KeyPath.swift */; };
+		44A2426A21A6C80200A96B21 /* Himotoki.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A2422F21A6C5E300A96B21 /* Himotoki.h */; };
+		44A2426D21A6CB4A00A96B21 /* PAYJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2426C21A6CB4A00A96B21 /* PAYJP.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		444BD21321A2A97E0012ABD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 615AFF5B1C8C74A1003FB86F;
-			remoteInfo = PAYJP;
-		};
-		444BD21521A2A97E0012ABD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 615AFF651C8C74A1003FB86F;
-			remoteInfo = PAYJPTests;
-		};
-		444BD21721A2A9840012ABD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 615AFF5A1C8C74A1003FB86F;
-			remoteInfo = PAYJP;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		448733EC21A24BE300CFDFAA /* CopyFiles */ = {
+		442D880921A172C3005D5900 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -58,10 +58,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PAYJP.xcodeproj; path = "Carthage/Checkouts/payjp-ios/PAYJP.xcodeproj"; sourceTree = "<group>"; };
 		448901B2219D4051003CAA51 /* libRNPayjpIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPayjpIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		448901B5219D4051003CAA51 /* RNPayjpIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPayjpIOS.h; sourceTree = "<group>"; };
 		448901B6219D4051003CAA51 /* RNPayjpIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPayjpIOS.m; sourceTree = "<group>"; };
+		44A2420D21A6C53100A96B21 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Object.swift; path = "Carthage/Checkouts/payjp-ios/Sources/Object.swift"; sourceTree = "<group>"; };
+		44A2420F21A6C53100A96B21 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = "Carthage/Checkouts/payjp-ios/Sources/Card.swift"; sourceTree = "<group>"; };
+		44A2421021A6C53100A96B21 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = "Carthage/Checkouts/payjp-ios/Sources/APIError.swift"; sourceTree = "<group>"; };
+		44A2421221A6C53100A96B21 /* Transformers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transformers.swift; path = "Carthage/Checkouts/payjp-ios/Sources/Transformers.swift"; sourceTree = "<group>"; };
+		44A2421321A6C53100A96B21 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = "Carthage/Checkouts/payjp-ios/Sources/APIClient.swift"; sourceTree = "<group>"; };
+		44A2421521A6C53100A96B21 /* PAYErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PAYErrorResponse.swift; path = "Carthage/Checkouts/payjp-ios/Sources/PAYErrorResponse.swift"; sourceTree = "<group>"; };
+		44A2421621A6C53200A96B21 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = "Carthage/Checkouts/payjp-ios/Sources/Token.swift"; sourceTree = "<group>"; };
+		44A2422021A6C5A100A96B21 /* AnyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyError.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Result/Result/AnyError.swift"; sourceTree = "<group>"; };
+		44A2422221A6C5A200A96B21 /* ResultProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Result/Result/ResultProtocol.swift"; sourceTree = "<group>"; };
+		44A2422321A6C5A200A96B21 /* NoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoError.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Result/Result/NoError.swift"; sourceTree = "<group>"; };
+		44A2422421A6C5A200A96B21 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Result/Result/Result.swift"; sourceTree = "<group>"; };
+		44A2422B21A6C5E300A96B21 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RawRepresentable.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/RawRepresentable.swift"; sourceTree = "<group>"; };
+		44A2422C21A6C5E300A96B21 /* Casting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Casting.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Casting.swift"; sourceTree = "<group>"; };
+		44A2422D21A6C5E300A96B21 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSNumber.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/NSNumber.swift"; sourceTree = "<group>"; };
+		44A2422E21A6C5E300A96B21 /* Extractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extractor.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Extractor.swift"; sourceTree = "<group>"; };
+		44A2422F21A6C5E300A96B21 /* Himotoki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Himotoki.h; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Himotoki.h"; sourceTree = "<group>"; };
+		44A2423021A6C5E300A96B21 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Decodable.swift"; sourceTree = "<group>"; };
+		44A2423121A6C5E400A96B21 /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Transformer.swift"; sourceTree = "<group>"; };
+		44A2423221A6C5E400A96B21 /* StandardLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardLib.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/StandardLib.swift"; sourceTree = "<group>"; };
+		44A2423321A6C5E400A96B21 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/Operators.swift"; sourceTree = "<group>"; };
+		44A2423421A6C5E400A96B21 /* decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = decode.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/decode.swift"; sourceTree = "<group>"; };
+		44A2423521A6C5E400A96B21 /* DecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecodeError.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/DecodeError.swift"; sourceTree = "<group>"; };
+		44A2423621A6C5E400A96B21 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyPath.swift; path = "Carthage/Checkouts/payjp-ios/Carthage/Checkouts/Himotoki/Sources/KeyPath.swift"; sourceTree = "<group>"; };
+		44A2426C21A6CB4A00A96B21 /* PAYJP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYJP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,27 +98,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		444BD20D21A2A95E0012ABD7 /* libraries */ = {
-			isa = PBXGroup;
-			children = (
-				444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */,
-			);
-			name = libraries;
-			sourceTree = "<group>";
-		};
-		444BD20F21A2A97E0012ABD7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				444BD21421A2A97E0012ABD7 /* PAYJP.framework */,
-				444BD21621A2A97E0012ABD7 /* PAYJPTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		448901A9219D4050003CAA51 = {
 			isa = PBXGroup;
 			children = (
-				444BD20D21A2A95E0012ABD7 /* libraries */,
+				44A2420B21A6C50300A96B21 /* Vendors */,
 				448901B4219D4051003CAA51 /* RNPayjpIOS */,
 				448901B3219D4051003CAA51 /* Products */,
 			);
@@ -114,26 +120,92 @@
 			children = (
 				448901B5219D4051003CAA51 /* RNPayjpIOS.h */,
 				448901B6219D4051003CAA51 /* RNPayjpIOS.m */,
+				44A2426C21A6CB4A00A96B21 /* PAYJP.swift */,
 			);
 			path = RNPayjpIOS;
 			sourceTree = "<group>";
 		};
+		44A2420B21A6C50300A96B21 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				44A2422A21A6C5BA00A96B21 /* Himotoki */,
+				44A2421F21A6C57500A96B21 /* Result */,
+				44A2420C21A6C50B00A96B21 /* PAYJP */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		44A2420C21A6C50B00A96B21 /* PAYJP */ = {
+			isa = PBXGroup;
+			children = (
+				44A2421321A6C53100A96B21 /* APIClient.swift */,
+				44A2421021A6C53100A96B21 /* APIError.swift */,
+				44A2420F21A6C53100A96B21 /* Card.swift */,
+				44A2420D21A6C53100A96B21 /* Object.swift */,
+				44A2421521A6C53100A96B21 /* PAYErrorResponse.swift */,
+				44A2421621A6C53200A96B21 /* Token.swift */,
+				44A2421221A6C53100A96B21 /* Transformers.swift */,
+			);
+			name = PAYJP;
+			sourceTree = "<group>";
+		};
+		44A2421F21A6C57500A96B21 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				44A2422021A6C5A100A96B21 /* AnyError.swift */,
+				44A2422321A6C5A200A96B21 /* NoError.swift */,
+				44A2422421A6C5A200A96B21 /* Result.swift */,
+				44A2422221A6C5A200A96B21 /* ResultProtocol.swift */,
+			);
+			name = Result;
+			sourceTree = "<group>";
+		};
+		44A2422A21A6C5BA00A96B21 /* Himotoki */ = {
+			isa = PBXGroup;
+			children = (
+				44A2422C21A6C5E300A96B21 /* Casting.swift */,
+				44A2423021A6C5E300A96B21 /* Decodable.swift */,
+				44A2423421A6C5E400A96B21 /* decode.swift */,
+				44A2423521A6C5E400A96B21 /* DecodeError.swift */,
+				44A2422E21A6C5E300A96B21 /* Extractor.swift */,
+				44A2422F21A6C5E300A96B21 /* Himotoki.h */,
+				44A2423621A6C5E400A96B21 /* KeyPath.swift */,
+				44A2422D21A6C5E300A96B21 /* NSNumber.swift */,
+				44A2423321A6C5E400A96B21 /* Operators.swift */,
+				44A2422B21A6C5E300A96B21 /* RawRepresentable.swift */,
+				44A2423221A6C5E400A96B21 /* StandardLib.swift */,
+				44A2423121A6C5E400A96B21 /* Transformer.swift */,
+			);
+			name = Himotoki;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44A2426921A6C7F600A96B21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A2426A21A6C80200A96B21 /* Himotoki.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		448901B1219D4050003CAA51 /* RNPayjpIOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448901BB219D4051003CAA51 /* Build configuration list for PBXNativeTarget "RNPayjpIOS" */;
 			buildPhases = (
+				44A2426921A6C7F600A96B21 /* Headers */,
 				448901AE219D4050003CAA51 /* Sources */,
 				448901AF219D4050003CAA51 /* Frameworks */,
 				448901B0219D4050003CAA51 /* CopyFiles */,
-				448733EC21A24BE300CFDFAA /* CopyFiles */,
+				442D880921A172C3005D5900 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				444BD21821A2A9840012ABD7 /* PBXTargetDependency */,
 			);
 			name = RNPayjpIOS;
 			productName = PNPayjpIOS;
@@ -151,6 +223,7 @@
 				TargetAttributes = {
 					448901B1219D4050003CAA51 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -164,12 +237,6 @@
 			mainGroup = 448901A9219D4050003CAA51;
 			productRefGroup = 448901B3219D4051003CAA51 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 444BD20F21A2A97E0012ABD7 /* Products */;
-					ProjectRef = 444BD20E21A2A97E0012ABD7 /* PAYJP.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				448901B1219D4050003CAA51 /* RNPayjpIOS */,
@@ -177,41 +244,39 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		444BD21421A2A97E0012ABD7 /* PAYJP.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PAYJP.framework;
-			remoteRef = 444BD21321A2A97E0012ABD7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		444BD21621A2A97E0012ABD7 /* PAYJPTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PAYJPTests.xctest;
-			remoteRef = 444BD21521A2A97E0012ABD7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
 		448901AE219D4050003CAA51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A2421E21A6C53200A96B21 /* Token.swift in Sources */,
+				44A2422921A6C5A200A96B21 /* Result.swift in Sources */,
+				44A2423F21A6C5E400A96B21 /* Operators.swift in Sources */,
+				44A2423D21A6C5E400A96B21 /* Transformer.swift in Sources */,
+				44A2421721A6C53200A96B21 /* Object.swift in Sources */,
+				44A2423A21A6C5E400A96B21 /* NSNumber.swift in Sources */,
+				44A2424221A6C5E400A96B21 /* KeyPath.swift in Sources */,
+				44A2421C21A6C53200A96B21 /* APIClient.swift in Sources */,
+				44A2424021A6C5E400A96B21 /* decode.swift in Sources */,
+				44A2422821A6C5A200A96B21 /* NoError.swift in Sources */,
+				44A2421B21A6C53200A96B21 /* Transformers.swift in Sources */,
+				44A2424121A6C5E400A96B21 /* DecodeError.swift in Sources */,
+				44A2421921A6C53200A96B21 /* APIError.swift in Sources */,
+				44A2422621A6C5A200A96B21 /* AnyError.swift in Sources */,
+				44A2423C21A6C5E400A96B21 /* Decodable.swift in Sources */,
+				44A2426D21A6CB4A00A96B21 /* PAYJP.swift in Sources */,
+				44A2421D21A6C53200A96B21 /* PAYErrorResponse.swift in Sources */,
+				44A2421821A6C53200A96B21 /* Card.swift in Sources */,
+				44A2422721A6C5A200A96B21 /* ResultProtocol.swift in Sources */,
+				44A2423921A6C5E400A96B21 /* Casting.swift in Sources */,
+				44A2423E21A6C5E400A96B21 /* StandardLib.swift in Sources */,
 				448901B7219D4051003CAA51 /* RNPayjpIOS.m in Sources */,
+				44A2423821A6C5E400A96B21 /* RawRepresentable.swift in Sources */,
+				44A2423B21A6C5E400A96B21 /* Extractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		444BD21821A2A9840012ABD7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PAYJP;
-			targetProxy = 444BD21721A2A9840012ABD7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		448901B9219D4051003CAA51 /* Debug */ = {
@@ -330,15 +395,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -347,14 +414,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

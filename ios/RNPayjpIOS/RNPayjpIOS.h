@@ -4,7 +4,7 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
-@import PAYJP;
+#import "RNPayjpIOS-Swift.h"
 
 @interface RNPayjpIOS : NSObject <RCTBridgeModule>
 {

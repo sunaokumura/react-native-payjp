@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/Himotoki"]
+	path = Carthage/Checkouts/Himotoki
+	url = https://github.com/ikesyo/Himotoki.git
+[submodule "Carthage/Checkouts/OHHTTPStubs"]
+	path = Carthage/Checkouts/OHHTTPStubs
+	url = https://github.com/AliSoftware/OHHTTPStubs.git
+[submodule "Carthage/Checkouts/Result"]
+	path = Carthage/Checkouts/Result
+	url = https://github.com/antitypical/Result.git

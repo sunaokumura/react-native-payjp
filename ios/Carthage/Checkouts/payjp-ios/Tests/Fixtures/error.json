@@ -1,0 +1,9 @@
+{
+    "error": {
+        "status": 402,
+        "message": "Invalid card number",
+        "param": "card[number]",
+        "code": "invalid_number",
+        "type": "card_error"
+    }
+}
