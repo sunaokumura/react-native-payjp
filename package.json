@@ -1,6 +1,6 @@
 {
   "name": "react-native-payjp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "payjp sdk wrapper for react native",
   "main": "index.js",
   "scripts": {
